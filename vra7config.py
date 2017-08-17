@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Python script for configuring vRA7 StackStorm Pack
 
 import getpass
@@ -13,7 +15,11 @@ verifysslvalue = verifyssl or 'vsphere.local'
 
 username = raw_input("username: ")
 
-pprompt = lambda: (getpass.getpass(), getpass.getpass('Retype password: '))
+
+def pprompt():
+    pass1 = getpass.getpass()
+    pass2 = getpass.getpass('Retype password: ')
+    return (pass1, pass2)
 
 p1, p2 = pprompt()
 while p1 != p2:
