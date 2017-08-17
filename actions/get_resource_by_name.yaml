@@ -1,6 +1,6 @@
 ---
 name: "get_resource_by_name"
-runner_type: "run-python"
+runner_type: "python-script"
 description: "Get resource by name"
 enabled: true
 entry_point: "get_resource_by_name.py"

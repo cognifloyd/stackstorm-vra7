@@ -1,6 +1,6 @@
 ---
 name: get_number_of_vms
-runner_type: run-python
+runner_type: python-script
 description: "Get the number of VMs"
 enabled: true
 entry_point: "get_number_of_vms.py"
