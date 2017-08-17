@@ -1,9 +1,9 @@
-from lib import action
 import json
+from lib import action
+
 
 class GetResourceByName(action.vRealizeAutomationAction):
     def run(self, resourceName):
-        resourceJSONString = ''
         resource = self.vra7.getResourceByName(name=resourceName)
         data = json.dumps(resource)
         jsondata = json.loads(data)

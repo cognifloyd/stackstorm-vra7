@@ -1,6 +1,7 @@
 from vraapiclient import catalog
 from st2actions.runners.pythonrunner import Action
 
+
 class vRealizeAutomationAction(Action):
 
     def __init__(self, config):
