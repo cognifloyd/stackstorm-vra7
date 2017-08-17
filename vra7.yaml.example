@@ -1,0 +1,5 @@
+hostname: vra.company.local
+username: administrator@vsphere.local
+password: "{{st2kv.system.vra7_password}}"
+tenant: vsphere.local
+verify_ssl: true
