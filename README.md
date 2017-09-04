@@ -34,6 +34,6 @@ configuration file, and automatically store the password in the datastore.
 
 All the above actions have matching ChatOps aliases:
 
-* `get all vra7 requests"
+* `get all vra7 requests`
 * `get details about {{resourceName}}` or `tell me about {{resourceName}}`
 * `How many vms are in vra` or `Tell me how many vms are in vra`
