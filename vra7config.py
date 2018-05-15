@@ -21,6 +21,7 @@ def pprompt():
     pass2 = getpass.getpass('Retype password: ')
     return (pass1, pass2)
 
+
 p1, p2 = pprompt()
 while p1 != p2:
     print 'Passwords do not match. Try again'
