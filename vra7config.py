@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 # Python script for configuring vRA7 StackStorm Pack
+from __future__ import print_function
 
 import getpass
 import subprocess
@@ -24,7 +25,7 @@ def pprompt():
 
 p1, p2 = pprompt()
 while p1 != p2:
-    print 'Passwords do not match. Try again'
+    print('Passwords do not match. Try again')
     p1, p2 = pprompt()
 
 # vRA tenant configuration
@@ -43,4 +44,4 @@ config.write("tenant: " + '"' + str(tenantvalue) + '"' + "\n")
 config.write("verify_ssl: " + str(verifyssl) + "\n")
 config.close()
 
-print "Successfully configured vRA7 integration pack"
+print("Successfully configured vRA7 integration pack")
