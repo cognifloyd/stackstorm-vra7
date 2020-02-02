@@ -1,4 +1,4 @@
-from vraapiclient import catalog
+from vraapiclient.catalog import ConsumerClient
 from st2common.runners.base_action import Action
 
 
@@ -14,5 +14,5 @@ class vRealizeAutomationAction(Action):
         password = self.config['password']
         tenant = self.config['tenant']
 
-        client = catalog.ConsumerClient(hostname, username, password, tenant)
+        client = ConsumerClient(hostname, username, password, tenant)
         return client
