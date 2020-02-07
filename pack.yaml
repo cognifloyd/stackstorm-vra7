@@ -6,7 +6,7 @@ keywords:
   - vra7
   - vrealize automation
   - vmware
-version: 0.1.2
+version: 0.1.3
 author: Martez Reed
 email: martez.reed@greenreedtech.com
 python_versions:
