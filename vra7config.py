@@ -41,12 +41,11 @@ p = subprocess.Popen(["st2", "key", "set", "vra7_password", p1, "--encrypt"],
                      stdout=subprocess.PIPE)
 cmdoutput, err = p.communicate()
 
-config = open(configfile, 'w')
-config.write("hostname: " + '"' + str(hostname) + '"' + "\n")
-config.write("username: " + '"' + str(username) + '"' + "\n")
-config.write('password: "{{st2kv.system.vra7_password}}"' + "\n")
-config.write("tenant: " + '"' + str(tenantvalue) + '"' + "\n")
-config.write("verify_ssl: " + str(verifyssl) + "\n")
-config.close()
+with open(configfile, 'w') as config:
+    config.write("hostname: " + '"' + str(hostname) + '"' + "\n")
+    config.write("username: " + '"' + str(username) + '"' + "\n")
+    config.write('password: "{{st2kv.system.vra7_password}}"' + "\n")
+    config.write("tenant: " + '"' + str(tenantvalue) + '"' + "\n")
+    config.write("verify_ssl: " + str(verifyssl) + "\n")
 
 print("Successfully configured vRA7 integration pack")
