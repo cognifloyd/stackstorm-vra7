@@ -1,4 +1,4 @@
-from vraapiclient import catalog
+from vraapiclient import catalog  # pylint: disable=no-name-in-module
 from st2common.runners.base_action import Action
 
 
